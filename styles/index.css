@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Baumans&family=Chewy&family=Gemunu+Libre:wght@300&family=Oswald:wght@400&family=Roboto:wght@300&family=Spartan:wght@300&display=swap');
+
+#navigationBar {
+    display: flex;
+    flex-direction: column;
+}
+
+#primaryNavbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.7rem 1rem;
+    background-color: rgb(249, 249, 249);
+}
+
+#primaryNavbar .TNW {
+    font-size: 1.8rem;
+    font-weight: bolder;
+    border-right: 0.05rem #dadada solid;
+    padding-right: 1rem;
+}
+
+#primaryNavbar .TNW:hover {
+    color: rgb(211, 0, 183);
+}
+
+#news {
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: #b6b6b6;
+    padding-left: 0.3rem;
+}
+
+#news:hover {
+    color: black;
+}
+
+.menuLinks {
+    display: inline;
+    text-transform: uppercase;
+}
+
+.menuLinks a {
+    text-decoration: none;
+}
+
+.TNW {
+    align-self: center;
+    text-decoration: none;
+    color: black;
+    font-family: 'Baumans', Arial, Helvetica, sans-serif;
+}
+
+#menu {
+    align-self: center;
+    margin: 0rem 19rem;
+}
+
+#menu .menuLinks a {
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #5a5a5a;
+    font-family: 'Gemunu Libre', Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    letter-spacing: 0.1rem;
+}
+
+#menu .menuLinks a:hover {
+    background-color: white;
+    color: black;
+}
+
+#newsletterIcon {
+    align-self: center;
+    font-size: 1.5rem;
+}
+
+#newsletterIcon a {
+    color: #dadada;
+}
+
+#secondaryNavbar {
+    background-color: rgb(255, 221, 51);
+    padding: 1.1rem;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 590;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(43, 36, 53);
+    padding: 2rem;
+}
+
+header h1 {
+    color: rgba(255, 162, 185, 0.986);
+    font-size: 4rem;
+    font-family: 'Chewy', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin-left: 5rem;
+}
+
+header p {
+    color: white;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    align-self: center;
+    font-size: 1.1rem;
+    margin-right: 30rem;
+    font-weight: bold;
+}
