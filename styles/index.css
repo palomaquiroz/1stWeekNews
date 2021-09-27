@@ -1,258 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Baumans&family=Chewy&family=Gemunu+Libre:wght@300&family=Oswald:wght@400&family=Roboto:wght@300;400;500&family=Spartan:wght@300;500;800&display=swap');
 
-#navigationBar {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: 5;
-    box-shadow: 0rem 0.375rem 3.125rem -0.313rem rgba(7, 0, 0, 0.452);
-}
 
-#primaryNavbar {
-    display: flex;
-    justify-content: space-around;
-    padding: 0.7rem 1rem;
-    background-color: rgb(249, 249, 249);
-}
-
-#primaryNavbar .TNW {
-    font-size: 1.8rem;
-    font-weight: bolder;
-    border-right: 0.05rem #dadada solid;
-    padding-right: 1rem;
-}
-
-#primaryNavbar .TNW:hover {
-    color: rgb(211, 0, 183);
-}
-
-#news {
-    font-family: 'Oswald', Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    color: #A7AAB2;
-    padding-left: 0.3rem;
-}
-
-#news:hover {
-    color: black;
-}
-
-.menuLinks {
-    display: inline;
-    text-transform: uppercase;
-}
-
-.menuLinks a {
-    text-decoration: none;
-}
-
-.TNW {
-    align-self: center;
-    text-decoration: none;
-    color: black;
-    font-family: 'Baumans', Arial, Helvetica, sans-serif;
-}
-
-#menu {
-    align-self: center;
-    margin: 0rem 19rem;
-}
-
-#menu .menuLinks a {
-    padding: 1rem;
-    font-size: 1.2rem;
-    color: #505666;
-    font-family: 'Gemunu Libre', Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-    letter-spacing: 0.1rem;
-}
-
-#menu .menuLinks a:hover {
-    background-color: white;
-    color: black;
-}
-
-#newsletterIcon {
-    align-self: center;
-    font-size: 1.5rem;
-}
-
-#newsletterIcon a {
-    color: #dadada;
-}
-
-#secondaryNavbar {
-    background-color: rgb(255, 221, 51);
-    padding: 1.1rem;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-size: 0.9rem;
-    font-weight: 590;
-}
-
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #223;
-    padding: 2rem;
-}
-
-header h1 {
-    color: rgba(255, 162, 185, 0.986);
-    font-size: 4rem;
-    font-family: 'Chewy', Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.5rem;
-    margin-left: 5rem;
-}
-
-header p {
-    color: white;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    align-self: center;
-    font-size: 1.1rem;
-    margin-right: 30rem;
-}
-
-main {
-    padding: 5rem;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#articleHeader {
-    display: flex;
-    flex-direction: column;
-    padding: 3rem 0rem 8rem;
-}
-
-#articleHeader a {
-    align-self: center;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: 'Oswald', Arial, Helvetica, sans-serif;
-    color: #660099;
-    background-color: rgba(102, 0, 153, 0.1);
-}
-
-#articleHeader a:hover {
-    background-color: #660099;
-    color: white;
-}
-
-#articleHeader h2, h1 {
-    align-self: center;
-    text-align: center;
-    line-height: 5rem;
-    padding: 3rem 0rem 2rem;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-size: 4rem;
-    font-weight: bolder;
-    color: black;
-}
-
-#articleHeader p {
-    align-self: center;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
-    color: #505666;
-    font-weight: 300;
-}
-
-aside {
-    order: 2;
-    width: 30%;
-    position: sticky;
-    top: 0;
-    height: 100%;
-}
-
-#asideTitle {
-    padding: 3rem;
-    font-family: 'Oswald', Arial, Helvetica, sans-serif;
-    font-size: 1.7rem;
-    text-transform: uppercase;
-    font-weight: bolder;
-}
-
-#asideList {
-    padding: 0rem 0rem 0rem 3rem;
-}
-
-#asideList li {
-    margin: 0rem 0rem 3rem;
-}
-
-#asideList .listItem {
-    display: flex;
-}
-
-#asideList .listItem span {
-    font-family: 'Oswald', Arial, Helvetica, sans-serif;
-    font-size: 2.3rem;
-    font-weight: bold;
-    color: #CC0099;
-}
-
-#asideList .listItem a {
-    text-decoration: none;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-    color: black;
-    padding: 0rem 1rem;
-}
-
-#asideList .listItem a:hover {
-    text-decoration: underline 0.15rem solid #66009954;
-}
-
-#firstArtLink {
-    width: 40%;
-    margin: auto;
-    padding: 2rem;
-    border-radius: 1rem;
-    text-align: center;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    font-weight: bolder;
-}
-
-#firstArtLink button {
-    background-color: #CC0099;
-    border-radius: 1rem;
-    border: none;
-    margin: 1rem 0rem 0rem;
-    padding: 1rem;
-    font-size: 1rem;
-    font-weight: bolder;
-    text-decoration: none;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    color: black;
-}
-
-#firstArtLink button:hover {
-    color: white;
-}
-
-.body {
-    order: 1;
-    display: flex;
-    flex-wrap: wrap;
-    width: 70%;
-}
-
-.body h2 {
-    color: black;
-    font-weight: bolder;
-}
-
+/* Elements selectors */
 figure {
     margin-bottom: 2rem;
 }
@@ -266,12 +15,286 @@ figcaption {
     font-style: italic;
 }
 
-#initialPicture {
+video {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+blockquote {
+    padding: 0rem 1rem;
+    border-left: 0.2rem solid rgb(218, 218, 218);
+    font-style: italic;
+}
+
+footer {
+    padding: 4rem 0rem;
+    background-color: rgb(0, 0, 0);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+/* ids and classes selectors */
+#navigationBar {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    box-shadow: 0rem 0.375rem 3.125rem -0.313rem rgba(7, 0, 0, 0.452);
+}
+
+.primaryNavbar {
+    display: flex;
+    padding: 0.7rem 1rem;
+    justify-content: space-around;
+    background-color: rgb(249, 249, 249);
+}
+
+.primaryNavbar .TNW {
+    padding-right: 1rem;
+    border-right: 0.05rem rgb(218, 218, 218) solid;
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+
+.primaryNavbar .TNW:hover {
+    color: rgb(211, 0, 183);
+}
+
+.news {
+    padding-left: 0.3rem;
+    color: rgb(167, 170, 178);
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.news:hover {
+    color: rgb(0, 0, 0);
+}
+
+.menuLinks {
+    display: inline;
+    text-transform: uppercase;
+}
+
+.menuLinks a {
+    text-decoration: none;
+}
+
+.TNW {
+    align-self: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Baumans', Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.menu {
+    align-self: center;
+    margin: 0rem 19rem;
+}
+
+.menu .menuLinks a {
+    padding: 1rem;
+    color: rgb(80, 86, 102);
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    font-family: 'Gemunu Libre', Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.menu .menuLinks a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.newsletterIcon {
+    align-self: center;
+    font-size: 1.5rem;
+}
+
+.newsletterIcon a {
+    color: rgb(218, 218, 218);
+}
+
+.secondaryNavbar {
+    padding: 1.1rem;
+    background-color: rgb(255, 221, 51);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 590;
+}
+
+.headerPage {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    justify-content: space-between;
+    background-color: rgb(34, 34, 51);
+}
+
+.headerPage h1 {
+    margin-left: 5rem;
+    color: rgba(255, 162, 185, 0.986);
+    font-size: 4rem;
+    font-family: 'Chewy', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+
+.headerPage p {
+    align-self: center;
+    margin-right: 30rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+}
+
+.mainContent {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem;
+}
+
+.articleHeader {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0rem 8rem;
+}
+
+.articleHeader a {
+    align-self: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: rgba(102, 0, 153, 0.1);
+    color: rgb(102, 0, 153);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+}
+
+.articleHeader a:hover {
+    background-color: rgb(102, 0, 153);
+    color: rgb(255, 255, 255);
+}
+
+.articleHeader h2, h1 {
+    align-self: center;
+    padding: 3rem 0rem 2rem;
+    text-align: center;
+    line-height: 5rem;
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+.articleHeader p {
+    align-self: center;
+    color: rgb(80, 86, 102);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+#asideMenu {
+    order: 2;
+    position: sticky;
+    top: 0;
+    width: 30%;
+    height: 100%;
+}
+
+.asideTitle {
+    padding: 3rem;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.asideList {
+    padding: 0rem 0rem 0rem 3rem;
+}
+
+.asideList li {
+    margin: 0rem 0rem 3rem;
+}
+
+.asideList .listItem {
+    display: flex;
+}
+
+.asideList .listItem span {
+    color: rgb(204, 0, 153);
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.asideList .listItem a {
+    padding: 0rem 1rem;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+.asideList .listItem a:hover {
+    text-decoration: underline 0.15rem solid rgb(102, 0, 153);
+}
+
+.firstArtLink {
+    width: 40%;
+    padding: 2rem;
+    margin: auto;
+    border-radius: 1rem;
+    text-align: center;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.firstArtLink button {
+    margin: 1rem 0rem 0rem;
+    padding: 1rem;
+    background-color: rgb(204, 0, 153);
+    border-radius: 1rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-decoration: none;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+}
+
+.firstArtLink button:hover {
+    color: rgb(255, 255, 255);
+}
+
+.body {
+    display: flex;
+    flex-wrap: wrap;
+    order: 1;
+    width: 70%;
+}
+
+.body h2 {
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+.initialPicture {
     width: 100%;
     margin-bottom: 8rem;
 }
 
-#initialPicture img {
+.initialPicture img {
     display: block;
     margin: auto;
     width: 100%;
@@ -286,90 +309,84 @@ figcaption {
 }
 
 #author .storyBy {
+    margin-bottom: 0.5rem;
     font-family: 'Gemunu Libre', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     font-weight: bolder;
-    color: #A7AAB2;
+    color: rgb(167, 170, 178);
     letter-spacing: 0.1rem;
-    margin-bottom: 0.5rem;
 }
 
 #author ul {
     margin: 5rem auto;
-    position: sticky;
 }
 
 #author i {
     padding-bottom: 1rem;
     font-size: 1.7rem;
-    color: #a7aab28f;
+    color: rgba(167, 170, 178, 0.56);
 }
 
 #author i:hover {
-    color: #505666;
+    color: rgb(80, 86, 102);
 }
 
-article {
+.articleBody {
     width: 75%;
     margin-left: 2.8rem;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    color: #505666;
+    color: rgb(80, 86, 102);
     font-size: 1.2rem;
     font-weight: 400;
     letter-spacing: 0.05rem;
     line-height: 2rem;
 }
 
-article p {
+.articleBody p {
     margin-bottom: 2rem;
 }
 
-article span {
+.articleBody span {
     font-weight: bold;
 }
 
-article a {
+.articleBody a {
+    color: rgb(102, 0, 153);
     text-decoration: none;
-    color: #660099;
-    text-decoration: line-through 0.5rem #6600991c;
+    text-decoration: line-through 0.5rem rgba(102, 0, 153, 0.11);
 }
 
-article a:hover {
-    text-decoration: line-through 1rem #6600991c;
+.articleBody a:hover {
+    text-decoration: line-through 1rem rgba(102, 0, 153, 0.11);
 }
 
 .neuralConference {
     font-style: italic;
 }
 
-video {
-    width: 100%;
-    margin-bottom: 2rem;
-}
-
 .conferenceCard {
     display: flex;
     flex-wrap: wrap;
+    padding: 2rem;
     margin-bottom: 2rem;
     border-radius: 0.5rem;
     box-shadow: 0.06rem 0.12rem 0.625rem 0.06rem rgba(152, 152, 152, 0.486);
-    padding: 2rem;
 }
 
 .conferenceCard h4 {
+    width: 60%;
     font-family: 'Spartan', Arial, Helvetica, sans-serif;
     font-weight: bolder;
     font-size: 1rem;
-    color: black;
-    width: 60%;
+    color: rgba(0, 0, 0);
 }
 
 .conferenceCard p {
     width: 75%;
+    padding-right: 2rem;
     font-size: 0.8rem;
     letter-spacing: normal;
-    padding-right: 2rem;
-    color: #660099;
+    color: rgb(102, 0, 153);
 }
 
 .conferenceCard span {
@@ -380,86 +397,80 @@ video {
     padding: 1rem;
     border: none;
     border-radius: 0.5rem;
-    background-color: #00CCCC;
-    color: white;
+    background-color: rgb(0, 204, 204);
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-weight: bold;
 }
 
 .conferenceCard button:hover {
-    background-color: black;
-}
-
-blockquote {
-    padding: 0rem 1rem;
-    border-left: 0.2rem solid #dadada;
-    font-style: italic;
+    background-color: rgb(0, 0, 0);
 }
 
 .insideRelated {
     margin-bottom: 2rem;
+    padding: 1rem;
+    width: 65%;
     border-radius: 0.5rem;
     box-shadow: 0.06rem 0.12rem 0.625rem 0.06rem rgba(152, 152, 152, 0.486);
-    width: 65%;
-    padding: 1rem;
 }
 
 .insideRelated p {
-    color: black;
-    font-weight: bolder;
     margin-bottom: none;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
 }
 
 .insideRelated ul {
-    list-style-type: disc;
-    color: #660099;
     margin: 0rem 2rem;
+    list-style-type: disc;
+    color: rgb(102, 0, 153);
 }
 
-#tags {
+.tags {
     margin-bottom: 2rem;
 }
 
-#tags h4 {
-    font-family: 'Spartan', Arial, Helvetica, sans-serif;
-    color: black;
-    font-weight: bold;
+.tags h4 {
     margin-bottom: 1rem;
+    color: rgb(0, 0, 0);
+    font-family: 'Spartan', Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
-#tags li {
+.tags li {
     display: inline;
     margin-right: 0.2rem;
     font-size: 0.8rem;
     text-transform: uppercase;
 }
 
-#tags a {
-    text-decoration: none;
-    background-color: #6600993a;
+.tags a {
     padding: 0.5rem;
+    background-color: rgba(102, 0, 153, 0.23);
     border-radius: 0.2rem;
+    text-decoration: none;
 }
 
-#tags a:hover {
-    background-color: #660099;
-    color: white;
+.tags a:hover {
+    background-color: rgba(102, 0, 153, 1);
+    color: rgb(255, 255, 255);
 }
 
-#articleFooter {
+.articleFooter {
     display: flex;
     justify-content: space-between;
     font-size: 0.9rem;
-    color: #a7aab2;
+    color: rgb(167, 170, 178);
     font-weight: lighter;
 }
 
 #relatedArticles {
     order: 3;
+    width: 75%;
+    margin: 5rem 0rem;
     font-family: 'Spartan', Arial, Helvetica, sans-serif;
     font-weight: bolder;
-    margin: 5rem 0rem;
-    width: 75%;
 }
 
 #relatedArticles h4 {
@@ -476,62 +487,60 @@ blockquote {
 }
 
 .galleryItem {
-    text-decoration: none;
-    color: white;
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: 1rem;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
-
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 
 .galleryItem p {
+    margin: 1rem 0rem;
     text-transform: uppercase;
     font-weight: lighter;
     font-size: 0.8rem;
-    margin: 1rem 0rem;
 }
 
 .galleryItem1 {
-    background-image: url("../images/RA01.jpg");
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 4;
+    background-image: url("../images/RA01.jpg");
     font-size: 2rem;
 }
 
 .galleryItem2 {
-    background-image: url("../images/RA02.jpg");
     grid-column-start: 5;
     grid-column-end: 8;
     grid-row-start: 1;
     grid-row-end: 3;
-
+    background-image: url("../images/RA02.jpg");
 }
 
 .galleryItem3 {
-    background-image: url("../images/RA03.jpg");
     grid-column-start: 5;
     grid-column-end: 8;
     grid-row-start: 3;
     grid-row-end: 4;
+    background-image: url("../images/RA03.jpg");
 }
 
 .galleryItem4 {
-    background-image: url("../images/RA05.jpg");
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 4;
     grid-row-end: 8;
-    font-size: 2rem;
     display: flex;
     align-content: center;
     justify-content: center;
+    background-image: url("../images/RA05.jpg");
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -543,44 +552,35 @@ blockquote {
 
 .galleryItem4 button {
     margin: 1rem auto;
+    padding: 1rem;
     width: 30%;
-    border: 0.1rem solid white;
+    border: 0.1rem solid rgb(255, 255, 255);
     border-radius: 2rem;
     background: none;
-    padding: 1rem;
 }
 
 .galleryItem4 a {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-weight: bold;
 }
 
 .galleryItem5 {
-    background-image: url("../images/RA04.jpg");
     grid-column-start: 5;
     grid-column-end: 8;
     grid-row-start: 4;
     grid-row-end: 8;
+    background-image: url("../images/RA04.jpg");
     font-size: 2rem;
-}
-
-footer {
-    background-color: black;
-    padding: 4rem 0rem;
-}
-
-footer a {
-    text-decoration: none;
 }
 
 .mainSection {
     display: flex;
-    color: white;
     justify-content: space-between;
     padding: 0rem 5rem 1rem;
-    border-bottom: 0.05rem solid #dadada80;
+    border-bottom: 0.05rem solid rgb(218, 218, 218);
+    color: rgb(255, 255, 255);
 }
 
 .firstContainer {
@@ -588,15 +588,15 @@ footer a {
 }
 
 .footerTitle .TNW {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 4rem;
     font-weight: bolder;
 }
 
 .footerTitle p {
+    padding: 2rem 0rem;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
-    padding: 2rem 0rem;
 }
 
 .iconList {
@@ -611,16 +611,16 @@ footer a {
 }
 
 .iconList .icons a {
-    color: #6a6a6a;
+    color: rgb(106, 106, 106);
 }
 
 .iconList .icons a:hover {
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .secondContainer {
-    width: 50%;
     display: flex;
+    width: 50%;
 }
 
 .linksList {
@@ -628,10 +628,10 @@ footer a {
 }
 
 .linksList h6 {
+    margin-bottom: 2rem;
     font-family: 'Oswald', Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     text-transform: uppercase;
-    margin-bottom: 2rem;
 }
 
 .linksList li {
@@ -639,19 +639,19 @@ footer a {
 }
 
 .linksList a {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    color: #00CCCC;
+    color: rgb(0, 204, 204);
     font-size: 1rem;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 .linksList a:hover {
-    border-bottom: 0.1rem solid #00cccc79;
+    border-bottom: 0.1rem solid rgba(0, 204, 204, 0.47);
 }
 
 .finalSection {
-    text-align: center;
     padding: 3rem 0rem;
-    color: #A7AAB2;
+    color: rgb(167, 170, 178);
+    text-align: center;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
@@ -661,7 +661,7 @@ footer a {
 
 .finalSection a {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .finalSection a:hover {
