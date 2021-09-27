@@ -1,8 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Baumans&family=Chewy&family=Gemunu+Libre:wght@300&family=Oswald:wght@400&family=Roboto:wght@300&family=Spartan:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baumans&family=Chewy&family=Gemunu+Libre:wght@300&family=Oswald:wght@400&family=Roboto:wght@300;400;500&family=Spartan:wght@300;500;800&display=swap');
 
 #navigationBar {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    box-shadow: 0rem 0.375rem 3.125rem -0.313rem rgba(7, 0, 0, 0.452);
 }
 
 #primaryNavbar {
@@ -28,7 +33,7 @@
     font-weight: bolder;
     font-size: 1.3rem;
     text-transform: uppercase;
-    color: #b6b6b6;
+    color: #A7AAB2;
     padding-left: 0.3rem;
 }
 
@@ -60,7 +65,7 @@
 #menu .menuLinks a {
     padding: 1rem;
     font-size: 1.2rem;
-    color: #5a5a5a;
+    color: #505666;
     font-family: 'Gemunu Libre', Arial, Helvetica, sans-serif;
     font-weight: bolder;
     letter-spacing: 0.1rem;
@@ -92,7 +97,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgb(43, 36, 53);
+    background-color: #223;
     padding: 2rem;
 }
 
@@ -111,5 +116,512 @@ header p {
     align-self: center;
     font-size: 1.1rem;
     margin-right: 30rem;
+}
+
+main {
+    padding: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#articleHeader {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0rem 8rem;
+}
+
+#articleHeader a {
+    align-self: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    color: #660099;
+    background-color: rgba(102, 0, 153, 0.1);
+}
+
+#articleHeader a:hover {
+    background-color: #660099;
+    color: white;
+}
+
+#articleHeader h2 {
+    align-self: center;
+    text-align: center;
+    line-height: 5rem;
+    padding: 3rem 0rem 2rem;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+#articleHeader p {
+    align-self: center;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: #505666;
+    font-weight: 300;
+}
+
+aside {
+    order: 2;
+    width: 30%;
+    position: sticky;
+    top: 0;
+    height: 100%;
+}
+
+#asideTitle {
+    padding: 3rem;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+#asideList {
+    padding: 0rem 0rem 0rem 3rem;
+}
+
+#asideList li {
+    margin: 0rem 0rem 3rem;
+}
+
+#asideList .listItem {
+    display: flex;
+}
+
+#asideList .listItem span {
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    font-size: 2.3rem;
     font-weight: bold;
+    color: #CC0099;
+}
+
+#asideList .listItem a {
+    text-decoration: none;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: black;
+    padding: 0rem 1rem;
+}
+
+#asideList .listItem a:hover {
+    text-decoration: underline 0.15rem solid #66009954;
+}
+
+#firstArtLink {
+    width: 40%;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+#firstArtLink button {
+    background-color: #CC0099;
+    border-radius: 1rem;
+    border: none;
+    margin: 1rem 0rem 0rem;
+    padding: 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: black;
+}
+
+#firstArtLink button:hover {
+    color: white;
+}
+
+#body {
+    order: 1;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+#initialPicture {
+    width: 100%;
+    margin-bottom: 8rem;
+}
+
+#initialPicture img {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+#author {
+    width: 20%;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Spartan', Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+#author .storyBy {
+    font-family: 'Gemunu Libre', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #A7AAB2;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.5rem;
+}
+
+#author ul {
+    margin: 5rem auto;
+    position: sticky;
+}
+
+#author i {
+    padding-bottom: 1rem;
+    font-size: 1.7rem;
+    color: #a7aab28f;
+}
+
+#author i:hover {
+    color: #505666;
+}
+
+article {
+    width: 75%;
+    margin-left: 2.8rem;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: #505666;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    line-height: 2rem;
+}
+
+article p {
+    margin-bottom: 2rem;
+}
+
+article span {
+    font-weight: bold;
+}
+
+article a {
+    text-decoration: none;
+    color: #660099;
+    text-decoration: line-through 0.5rem #6600991c;
+}
+
+article a:hover {
+    text-decoration: line-through 1rem #6600991c;
+}
+
+.neuralConference {
+    font-style: italic;
+}
+
+video {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.conferenceCard {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.06rem 0.12rem 0.625rem 0.06rem rgba(152, 152, 152, 0.486);
+    padding: 2rem;
+}
+
+.conferenceCard h4 {
+    font-family: 'Spartan', Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 1rem;
+    color: black;
+    width: 60%;
+}
+
+.conferenceCard p {
+    width: 75%;
+    font-size: 0.8rem;
+    letter-spacing: normal;
+    padding-right: 2rem;
+    color: #660099;
+}
+
+.conferenceCard span {
+    width: 15%;
+}
+
+.conferenceCard button {
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #00CCCC;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.conferenceCard button:hover {
+    background-color: black;
+}
+
+blockquote {
+    padding: 0rem 1rem;
+    border-left: 0.2rem solid #dadada;
+    font-style: italic;
+}
+
+#tags {
+    margin-bottom: 2rem;
+}
+
+#tags h4 {
+    font-family: 'Spartan', Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#tags li {
+    display: inline;
+    margin-right: 0.2rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+#tags a {
+    text-decoration: none;
+    background-color: #6600993a;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+}
+
+#tags a:hover {
+    background-color: #660099;
+    color: white;
+}
+
+#articleFooter {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #a7aab2;
+    font-weight: lighter;
+}
+
+#relatedArticles {
+    order: 3;
+    font-family: 'Spartan', Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin: 5rem 0rem;
+    width: 75%;
+}
+
+#relatedArticles h4 {
+    font-size: 2.5rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 2.5rem;
+    margin-top: 4rem;
+    width: 100%;
+}
+
+.galleryItem {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.galleryItem p {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 0.8rem;
+    margin: 1rem 0rem;
+}
+
+.galleryItem1 {
+    background-image: url("../images/RA01.jpg");
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    font-size: 2rem;
+}
+
+.galleryItem2 {
+    background-image: url("../images/RA02.jpg");
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+}
+
+.galleryItem3 {
+    background-image: url("../images/RA03.jpg");
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.galleryItem4 {
+    background-image: url("../images/RA05.jpg");
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 8;
+    font-size: 2rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.galleryItem4 p {
+    font-weight: bolder;
+    font-size: 1.2rem;
+    text-transform: none;
+}
+
+.galleryItem4 button {
+    margin: 1rem auto;
+    width: 30%;
+    border: 0.1rem solid white;
+    border-radius: 2rem;
+    background: none;
+    padding: 1rem;
+}
+
+.galleryItem4 a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.galleryItem5 {
+    background-image: url("../images/RA04.jpg");
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 8;
+    font-size: 2rem;
+}
+
+footer {
+    background-color: black;
+    padding: 4rem 0rem;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.mainSection {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    padding: 0rem 5rem 1rem;
+    border-bottom: 0.05rem solid #dadada80;
+}
+
+.firstContainer {
+    width: 50%;
+}
+
+.footerTitle .TNW {
+    color: white;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+.footerTitle p {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    padding: 2rem 0rem;
+}
+
+.iconList {
+    width: 100%;
+    margin-top: 2.5rem;
+}
+
+.iconList .icons {
+    display: inline;
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.iconList .icons a {
+    color: #6a6a6a;
+}
+
+.iconList .icons a:hover {
+    color: white;
+}
+
+.secondContainer {
+    width: 50%;
+    display: flex;
+}
+
+.linksList {
+    width: 50%;
+}
+
+.linksList h6 {
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.linksList li {
+    margin-bottom: 1rem;
+}
+
+.linksList a {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: #00CCCC;
+    font-size: 1rem;
+}
+
+.linksList a:hover {
+    border-bottom: 0.1rem solid #00cccc79;
+}
+
+.finalSection {
+    text-align: center;
+    padding: 3rem 0rem;
+    color: #A7AAB2;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.finalSection p {
+    margin-bottom: 1rem;
+}
+
+.finalSection a {
+    text-decoration: none;
+    color: white;
+}
+
+.finalSection a:hover {
+    color:rgb(211, 0, 183);
 }
