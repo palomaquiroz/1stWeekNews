@@ -220,6 +220,7 @@ aside {
     text-align: center;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
+    font-weight: bolder;
 }
 
 #firstArtLink button {
@@ -229,6 +230,7 @@ aside {
     margin: 1rem 0rem 0rem;
     padding: 1rem;
     font-size: 1rem;
+    font-weight: bolder;
     text-decoration: none;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
