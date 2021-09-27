@@ -23,6 +23,7 @@ You will also find a 'reset.css' file used to formatting the default styles.
 
 Both the first week HTML file and the second one are linked to the same stylesheet (index.css).  
 In each of them you will also find a button that leads you to the other.
+
 ## Clarifications
 * Fonts had to be changed. The fonts that the original website use must be purchased. I tried my best searching for the most similar fonts on Google Fonts.
 * Most of the colors used are the same as the original website... In some cases I had to find them by eye as I couldn't find the original color by inspecting the page.
@@ -31,7 +32,10 @@ In each of them you will also find a button that leads you to the other.
 ## Getting Started
 
 ### Executing 
-You can download the project from this repository and open the 'index.html' file on your browser to see the template
+1st week project: You can download the project from this repository and open the 'index.html' file on your browser to see the template
 or you can access it clicking on its [GithubPage](https://palomaquiroz.github.io/1stWeekNews/)
+
+2nd week project: You can download the project from this repository and open the 'deepmind-tells-google-no-idea-make-ai-less-toxic.html' file on your browser to see the template
+or you can access it clicking on its [GithubPage](https://palomaquiroz.github.io/1stWeekNews/deepmind-tells-google-no-idea-make-ai-less-toxic.html)
 
 And that's it! :smile:
